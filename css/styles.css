@@ -18,9 +18,6 @@ ul {
 button {
   cursor: pointer;
 }
-a {
-  text-decoration: none;
-}
 :root {
   --text-grey-color: #2e2f42;
   --color-white-color: #ffffff;
@@ -770,11 +767,11 @@ img {
   border-radius: 50%;
   margin-left: auto;
   cursor: pointer;
-  transition: box-shadow 250ms var(--cubic), border 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 .modal-close-btn:is(:hover, :focus) {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  background-color: var(--activ-color);
+  fill: #ffffff;
   border: none;
 }
 .close-icon {
@@ -869,6 +866,7 @@ img {
   padding: 8px 16px;
   transition: outline 250ms var(--cubic), border-color 250ms var(--cubic);
   resize: none;
+  margin-bottom: 16px;
 }
 .modal-comment::placeholder {
   font-weight: 400;
